@@ -3,12 +3,14 @@ import { MenuList } from "../data/data";
 import Layout from "./../components/Layout/Layout";
 import {
   Box,
+  Button,
   Card,
   CardActionArea,
   CardContent,
   CardMedia,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -29,6 +31,7 @@ const Menu = () => {
                 </Typography>
                 <Typography variant="body2">{menu.description}</Typography>
               </CardContent>
+            <Button><Link to={`/menu/${menu.name}`}>Details</Link></Button> 
             </CardActionArea>
           </Card>
         ))}

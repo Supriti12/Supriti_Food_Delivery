@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Pagenotfound from "./pages/Pagenotfound";
+import MenuDetails from "./pages/MenuDetails";
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="*" element={<Pagenotfound />} />
+          <Route path="/menu/:name" element={<MenuDetails/>}/>
         </Routes>
       </BrowserRouter>
     </div>
