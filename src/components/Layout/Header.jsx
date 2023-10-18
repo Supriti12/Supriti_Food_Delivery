@@ -13,6 +13,9 @@ import Logo from "../../images/logo.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   // hndle menu click
@@ -92,6 +95,15 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink to={"/contact"}>Contact</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/login"}>Login</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/game"}>Tic-tac-toe</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/text"}>Text</NavLink>
                 </li>
               </ul>
             </Box>
